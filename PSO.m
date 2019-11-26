@@ -3,6 +3,7 @@ function outIndex = PSO(inIndex,r)
 % f=inv(sqrt(2*pi*det(R)))*exp(-.5*(z1)'*inv(R)*(z1))+ 1e-99; 
 % f= @(x)x .* sin(x) .* cos(2 * x) - 2 * x .* sin(3 * x); % 函数表达式
 % figure(1);ezplot(f,[0,0.01,20]);
+% 粒子群的位置就是粒子滤波中预测值与真实值的差值，是一个角度
 f=r;
 N = 300;                         % 初始种群个数
 d = 1;                          % 空间维数
